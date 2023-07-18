@@ -1,24 +1,57 @@
-import React from 'react'
+import React from 'react';
+import logo from "../../assets/Images/logo.png";
+import Button from '../Button';
 
-const Header = () => {
+
+
+const Header = ({title, spending}) => {
   return (
     <>
-    <div className="w-[100%] h-[100%] md:w-[100%] md:h-[100%] bg-Herobg text-white bg-cover px-4">
-     <header className=" flex justify-between items-center py-[5px]"></header>
-     <nav className="flex items-center space-x-5">
-    <img src={logo}/>
-      <ul className="items-center gap-8 md:flex">
-        <li className="pb-3 cursor-pointer"><a href="#">Products</a></li>
-        <li className="pb-3 cursor-pointer"><a href="#">Suscription</a></li>
-        <li className="pb-3 cursor-pointer"><a href="#">Why Nura?</a></li>
-      </ul>
-     </nav>
+    <div className="w-[100%] h-[100%] md:w-[100%] md:h-[100%] relative">
+    <header className="bg-cover bg-center min-h-screen"
+    style={headingStyle}
+   >
+      <nav className="flex items-center text-white px-4 pt-4">
+        <div>
+          <img src = {logo}  
+          className='ml-12 pt-3'
+          />
+        </div>
+        <ul className='flex text-[25px] ml-8 space-x-6'>
+          <li>Products</li>
+          <li>Subscription</li>
+          <li>Why Nura ?</li>
+          <li>Support</li>
+        </ul>
+        <div className="ml-auto">
+        <span>Cart</span>
+        <span>(0)</span>
+        </div>
+      </nav>
+    <div className='absolute bottom-20 transform translate-x-[250%] translate-y-[0px]'>
+      <h4 className='text-white'>{title}</h4>
+      <h1 className='text-white'>{spending}</h1>
+      <Button content = "SHOP SALE NOW" className="text-[#171717] bg-white px-3 py-2 rounded-full"/>
     </div>
+      
+    </header>
     
+    </div>
     </>
-  )
+)
+}
+
+const headingStyle = {
+  backgroundImage : "url('../src/assets/Images/hero.png')",
+}
+
+Header.defaultProps = {
+ title :   "OUR BIGGEST SALE NOW LIVE",
+ spending : "Black Friday Starts Now!"
 }
 
 export default Header
+
+
 
 
