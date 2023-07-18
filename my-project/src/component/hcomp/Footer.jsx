@@ -22,8 +22,34 @@ const Footer = () => {
                 <li className='text-[#fff]'><a href="#">NuraPhone</a></li>
                 <li className='text-[#fff]'><a href="#">NuraLoop</a></li>
                 <li className='text-[#fff]'><a href="#">Accessories</a></li>
+                <li className='text-[#fff]'><a href="#">Subscription</a></li>
          </ul>
         
+        <ul>
+            <li className='text-[#737373]'>Info</li>
+            <li className='text-[#fff]'><a href="#">Why Nura ?</a></li>
+            <li className='text-[#fff]'><a href="#">Shipping</a></li>
+            <li className='text-[#fff]'><a href="#">Returns</a></li>
+            <li className='text-[#fff]'><a href="#">Warranty</a></li>
+            <li className='text-[#fff]'><a href="#"></a>Patents</li>
+           
+        </ul>
+
+        <ul>
+            <li className='text-[#737373]'>SUPPORT</li>
+            <li className='text-[#fff]'> <a href="#">Help Centre</a></li>
+            <li className='text-[#fff]'> <a href="#">Contact Us</a></li>
+        </ul>
+
+        <ul>
+            <li className='text-[#737373]'>SOCIALS</li>
+            <li className='text-[#fff]'><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Tidal</a></li>
+            <li></li>
+            <li></li>
+        </ul>
         </footer>
     </div>
     </>
