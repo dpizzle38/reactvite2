@@ -30,8 +30,8 @@ const Header = ({title, spending}) => {
       </nav>
     <div className='absolute bottom-20 transform translate-x-[250%] translate-y-[0px]'>
       <h4 className='text-white'>{title}</h4>
-      <h1 className='text-white'>{spending}</h1>
-      <Button content = "SHOP SALE NOW" className="text-[#171717] bg-white px-3 py-2 rounded-full"/>
+      <h1 className='text-white text-[70px] relative right-[110rem]'>{spending}</h1>
+      <Button content = "SHOP SALE NOW" className="text-[#171717] bg-white px-3 py-2 rounded-full relative right-[60rem]"/>
     </div>
       
     </header>

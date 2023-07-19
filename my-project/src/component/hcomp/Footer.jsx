@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <>
     <div className='w-[100%] h-[100%] md:w-[100%] md:h-[100%] bg-[#000]'>
-        <footer className='flex gap-[8rem]'>
-        <div className='leadinng-8'>
+        <footer className='flex gap-[8rem] pb-[6rem]'>
+        <div className='leading-8'>
             <img className='ml-[2rem] pt-[3rem]' src={logo} />
             <p className='text-[#fff] ml-[2rem] pt-[1.5rem]'>Nura design headphones <br /> tuned to you. Bringing you <br /> closer to music with <br /> personalized sound.</p>
         </div>
@@ -41,7 +41,7 @@ const Footer = () => {
             <li className='text-[#fff]'> <a href="#">Contact Us</a></li>
         </ul>
 
-        <ul>
+        <ul className='pt-[3rem] leading-8'>
             <li className='text-[#737373]'>SOCIALS</li>
             <li className='text-[#fff]'><a href="#">Instagram</a></li>
             <li className='text-[#fff]'><a href="#">Facebook</a></li>
@@ -50,7 +50,12 @@ const Footer = () => {
             <li className='text-[#fff]'><a href="#">Twitter</a></li>
             <li className='text-[#fff]'><a href="#">Discord</a></li>
         </ul>
+
+        
         </footer>
+        <div>
+            <p className='text-[#737373] ml-[2rem]'>Copyright 2022 Nura Operations Pty Ltd. All rights reserved.</p>
+        </div>
     </div>
     </>
   )
