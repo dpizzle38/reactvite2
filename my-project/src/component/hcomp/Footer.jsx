@@ -54,7 +54,8 @@ const Footer = () => {
         
         </footer>
         <div>
-            <p className='text-[#737373] ml-[2rem]'>Copyright 2022 Nura Operations Pty Ltd. All rights reserved.</p>
+            <p className='text-[#737373] ml-[2rem] relative bottom-[2rem]'>Copyright © 2022 Nura Operations Pty Ltd. All rights reserved.
+</p>
         </div>
     </div>
     </>

@@ -6,6 +6,7 @@ import nuratrue from '../../assets/nuratrue.png'
 import nurabuds from '../../assets/Images/nurabuds.png'
 import nurabluetooth from '../../assets/Images/nurabluetooth.png'
 import Button from '../Button'
+import {FaArrowRight } from "react-icons/fa";
 
 const Discount = () => {
   return (
@@ -13,7 +14,7 @@ const Discount = () => {
     <div className="bg-[#171717] px-3 h-[100%] w-[100%] py-12">
         <div className='flex gap-[33rem] pt-[3rem]'>
         <p className='text-[63px] text-[#fff]'>Featured discounts</p>
-        <a className='text-[16px] text-[#7DFB5D] relative top-[3rem] ' href="#">VIEW ALL DISCOUNTS</a>
+        <a className='text-[16px] text-[#7DFB5D] relative flex items-center gap-[0.5rem]' href="#">VIEW ALL DISCOUNTS <FaArrowRight /> </a>
         </div>
         <section className='flex space-x-4 pt-[2.5rem]'>
           <div className='bg-[#e5e5e5] rounded-2xl'>
@@ -25,7 +26,7 @@ const Discount = () => {
               <span className='text-[#000]'>$299.25</span>
             </p>
             <Button content="SHOP NOW"
-                    className="bg-[#3333F5] text-[1rem] text-[#fff] rounded-full relative bottom-[3rem] px-7 py-2 left-[4rem] "
+                    className="bg-[#3333F5] text-[1rem] text-[#fff] flex items-center gap-[0.3rem] rounded-full relative bottom-[3rem] px-7 py-2 left-[4rem] "
             />
              </div>
           <div className='bg-[#e5e5e5] rounded-2xl'>
@@ -37,7 +38,7 @@ const Discount = () => {
             <span className='text-[#000]'>$399.99</span>
             </p>              
             <Button content="SHOP NOW"
-                    className="bg-[#3333F5] text-[1rem] text-[#fff] rounded-full relative bottom-[3rem] px-7 py-2 left-[4rem] "
+                    className="bg-[#3333F5] text-[1rem] gap-[0.3rem] flex items-center text-[#fff] rounded-full relative bottom-[3rem] px-7 py-2 left-[4rem] "
             />
           </div>
           <div className='bg-[#e5e5e5] rounded-2xl'>
@@ -49,7 +50,7 @@ const Discount = () => {
               <span className='text-[#000]'>$89.25</span>
             </p>
             <Button content="SHOP NOW"
-                    className="bg-[#3333F5] text-[1rem] text-[#fff] rounded-full relative bottom-[3rem] px-7 py-2 left-[4rem] "
+                    className="bg-[#3333F5] text-[1rem] text-[#fff] gap-[0.3rem] rounded-full flex items-center relative bottom-[3rem] px-7 py-2 left-[4rem] "
             />
             </div>
           <div className='bg-[#e5e5e5] rounded-2xl'>
@@ -61,7 +62,7 @@ const Discount = () => {
               <span>$44.25</span>
             </p>
             <Button content="SHOP NOW"
-                    className="bg-[#3333F5] text-[1rem] text-[#fff] rounded-full relative bottom-[3rem] px-7 py-2 left-[4rem] "
+                    className="bg-[#3333F5] text-[1rem] text-[#fff] rounded-full relative bottom-[3rem] flex items-center gap-[0.3rem] px-7 py-2 left-[4rem] "
             />
           </div>
         </section>

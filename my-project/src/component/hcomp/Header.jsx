@@ -3,7 +3,6 @@ import logo from "../../assets/Images/logo.png";
 import Button from '../Button';
 
 
-
 const Header = ({title, spending}) => {
   return (
     <>
@@ -31,7 +30,7 @@ const Header = ({title, spending}) => {
     <div className='absolute bottom-20 transform translate-x-[250%] translate-y-[0px]'>
       <h4 className='text-white relative right-[100rem] text-[23px]'>{title}</h4>
       <h1 className='text-white text-[70px] relative right-[110rem]'>{spending}</h1>
-      <Button content = "SHOP SALE NOW" className="text-[#171717] bg-white px-3 py-2 rounded-full relative right-[95rem]"/>
+      <Button content = "SHOP SALE NOW" className="flex items-center gap-[2px] text-[#171717] bg-white px-3 py-2 rounded-full relative right-[95rem]"/>
     </div>
       
     </header>

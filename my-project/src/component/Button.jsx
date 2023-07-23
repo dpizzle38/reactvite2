@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {FaArrowRight } from "react-icons/fa";
 
 const Button = ({className, content}) => {
-  return <button className = {`${className}`}>{content}</button>
+  return <button className = {`${className}`}>{content}<FaArrowRight /> </button>
     
   
 };
